@@ -2,24 +2,26 @@ import { StyleSheet, Text, View, Image } from 'react-native';
 
 const BookTile = (props) => {
     return(
-        <View style={StyleSheet.tile}>
-            <Image
+        <View style={styles.tile}>
+            {/* <Image
                 style={StyleSheet.Shoppingcar}
                 source={require('./assets/shoppingcar.svg')}
-            />
-            <View style={StyleSheet.tileDetail}>
-                <Text style={StyleSheet.tileTitle}>{props.title}</Text>
-                <Text style={StyleSheet.tileAuthor}>{props.Author}</Text>
-                <Text style={StyleSheet.Discription}>{props.Discription}</Text>
-                <Text style={StyleSheet.ISBN}>{props.ISBN}</Text>
+            /> */}
+            <View style={StyleSheet.tileDetails}>
+                <Text style={styles.title}>{props.title}</Text>
+                <Text style={styles.author}>{props.author}</Text>
+                <Text style={styles.discription}>{props.discription}</Text>
+                <Text style={styles.isbn}>{props.isbn}</Text>
+                <Text style={styles.button}>{props.button}</Text>
             </View>
+
         </View>
 
     );
 }
 
 const styles = StyleSheet.create({
-    tile:{
+      tile:{
         flexBasis: '50%',
         backgroundColor: "#aca5e6",
         marginVertical: '2%',
@@ -27,38 +29,39 @@ const styles = StyleSheet.create({
         borderWidth: 1,
         borderColor:'#dfdcf2',
         borderRadius: 10,
-        padding: 5,
-        paddingTop: 5,
-        margin: 5,
+        padding: 25,
+        margin: 4,
       },
     
       tileDetails:{
         padding: 25,
       },
     
-      tileTitle:{
-        fontSize: 24,
-        marginTop: 16,
+      title:{
+        fontSize: 30,
+        marginTop: 5,
     
       },
     
-      Author:{
-        fontSize: 14,
+      author:{
+        fontSize: 18,
         marginTop: 5,
       },
     
-      Discription:{
+      discription:{
         marginTop: 8,
-        fontSize: 12,
+        fontSize: 14,
       },
     
-      ISBN:{
+      isbn:{
         marginTop: 10,
+        fontSize: 12,
       },
       
-      tileText: {
-        fontSize: 16,
-        fontWeight: '60',
+      button: {
+        fontSize: 14,
+        paddingLeft: 300,
+        paddingTop: 5,
       },
 });
 
