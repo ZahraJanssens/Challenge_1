@@ -8,6 +8,11 @@ export default function App() {
   return (
     <ScrollView style={styles.container}>
       <Text style={styles.heading1}>Bookshop</Text>
+      <Image
+                style={styles.shoppingcar}
+                source={require('./assets/shoppingcar.png')}
+            />
+            
         <View style={styles.container}>
 
           <BookTile title="It Ends With Us" author="Author: Colleen Hoover" discription="Lorem Ipsum is simply dummy text of 
@@ -61,6 +66,12 @@ const styles = StyleSheet.create({
     paddingTop: 20, 
     
   },
+
+  shoppingcar:{
+    marginBottom: 10,
+    marginLeft: 340,
+    marginTop: -45,
+}
 
   // tilesContainer:{
   //   paddingLeft: 20,

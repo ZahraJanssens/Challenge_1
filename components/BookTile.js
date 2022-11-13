@@ -1,12 +1,8 @@
-import { StyleSheet, Text, View, Image } from 'react-native';
+import { StyleSheet, Text, View, Image, Button } from 'react-native';
 
 const BookTile = (props) => {
     return(
         <View style={styles.tile}>
-            {/* <Image
-                style={StyleSheet.Shoppingcar}
-                source={require('./assets/shoppingcar.svg')}
-            /> */}
             <View style={StyleSheet.tileDetails}>
                 <Text style={styles.title}>{props.title}</Text>
                 <Text style={styles.author}>{props.author}</Text>
@@ -60,7 +56,6 @@ const styles = StyleSheet.create({
       },
       
       button: {
-
         flexBasis: '50%',//200
         marginVertical: '2%',
         fontSize: 14,
@@ -73,6 +68,10 @@ const styles = StyleSheet.create({
         padding: 5,
         
       },
+
+      shoppingcar:{
+          paddingTop: 20,
+      }
 });
 
 export default BookTile;
