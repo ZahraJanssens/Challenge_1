@@ -55,13 +55,23 @@ const styles = StyleSheet.create({
     
       isbn:{
         marginTop: 10,
+        marginBottom: 10,
         fontSize: 12,
       },
       
       button: {
+
+        flexBasis: '50%',//200
+        marginVertical: '2%',
         fontSize: 14,
         paddingLeft: 300,
         paddingTop: 5,
+        borderStyle: 'solid',
+        borderWidth: 1,
+        borderColor:'#dfdcf2',
+        borderRadius: 10,
+        padding: 5,
+        
       },
 });
 
